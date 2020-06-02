@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PoolScapesIndia</title>
 
+    <!--favicon-->
+    <link rel="icon" href="img/icon.png" type="image/png" sizes="16x16">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -13,44 +16,50 @@
 </head>
 <body>
 
-
 <!--small screen navbar-->
-<div class="topbar d-flex d-lg-none bg-dark text-center p-4" style="justify-content: space-between;">
-    <a href="tel: +91 9895 706 799">
-        <h4>+91 9895 706 799</h4>
+<div class="topbar bg-dark text-center p-4 d-lg-none">
+    <a class="d-block mb-2" href="tel: +91 9895 706 799">
+        <span class="h5">+91 9895 706 799</span>
     </a>
-    <a href="https://wa.me/919895706799" target="_blank">
+    <a class="d-block mb-2" href="https://wa.me/919895706799" target="_blank">
         <i class="fab fa-whatsapp fa-2x"></i>
     </a>
-    <a class="ml-2" href="mailto:poolscapesindia@gmail.com">
-        <h4>poolscapesindia@gmail.com</h4>
+    <a class="d-block mb-2" href="mailto:poolscapesindia@gmail.com">
+        <span class="h5">poolscapesindia@gmail.com</span>
     </a>
 </div>
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark d-flex d-lg-none">
-    <a class="navbar-brand d-flex text-white align-items-center" href="index.html"><h4 class="mr-2">POOLSCAPES</h4> <small>INDIA</small> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
+        <a class="navbar-brand d-flex text-white align-items-center" href="index.html">
+            <img class="logo-light" src="img/logo-light.png" width="140" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="products.html">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="featured.html">Featured Works</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="featured.html">Featured Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 <!--small screen navbar-->
@@ -58,18 +67,26 @@
 <!-- large screen navbar -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top d-none d-lg-flex">
     <div class="container">
-        <a class="navbar-brand font-weight-bold d-flex align-items-center" href="index.html"><h3 class="mr-2">POOLSCAPES</h3> <small>INDIA</small> </a>
+        <a class="navbar-brand font-weight-bold d-flex align-items-center" href="index.html">
+            <img class="logo" style="display: none" src="img/logo.png" alt="">
+            <img class="logo-light" src="img/logo-light.png" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="tel: +91 9895 706 799">+91 9895 706 799</a>
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://wa.me/919895706799" target="_blank">
+                        <i class="fab fa-whatsapp fa-2x text-white"></i>
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="mailto:poolscapesindia@gmail.com">poolscapesindia@gmail.com</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="tel: +91 9895 706 799">+91 9895 706 799</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="mailto:poolscapesindia@gmail.com">poolscapesindia@gmail.com</a>
                 </li>
             </ul>
         </div>
@@ -77,11 +94,12 @@
 </nav>
 <div class="side-nav fixed-left d-none d-lg-block">
     <nav class="nav flex-column">
-        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="index.html">Home</a>
         <a class="nav-link" href="services.html">Services</a>
         <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="#Gallery">Gallery</a>
         <a class="nav-link" href="featured.html">Featured Works</a>
-        <a class="nav-link active" href="contact.html">Contact Us</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
     </nav>
 </div>
 <!-- large screen navbar -->
