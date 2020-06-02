@@ -210,7 +210,7 @@ p.big {
     position: relative;
     opacity: 1;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 16px;
     text-shadow: rgba(0, 0, 0, 0.6) 0px 4px 5px;
 }
 
@@ -264,15 +264,47 @@ p.big {
     opacity: .8;
 }
 
+@media (max-width: 767px) {
+    .topbar{
+        display: block;
+        text-align: center;
+    }
+    .partner_logo img {
+        right: 50%;
+        transform: translateX(50%);
+        width: 80px;
+        top: 20px;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+    .hovereffect h2 {
+        font-size: 1.2rem;
+    }
+    .hovereffect p.info {
+        font-size: 1rem;
+    }
+    .hovereffect .overlay {
+        overflow: auto;
+    }
+    .hovereffect ul.info li {
+        font-size: 1rem;
+    }
+    .pool_liners, .readymade_pools{
+        flex-direction: column-reverse;
+    }
+}
+
 @media (min-width: 768px) {
 
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
     }
-}
-
-@media (min-width: 1200px) {
+    .topbar{
+        display: flex;
+        justify-content: space-between;
+    }
     .partner_logo img{
         position: absolute;
         z-index: 100;
@@ -356,6 +388,12 @@ p.big {
     }
     .carousel-indicators {
         bottom: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-header {
+        height: auto;
     }
 }
 
