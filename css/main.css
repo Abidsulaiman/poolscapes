@@ -223,7 +223,7 @@ p.big {
 }
 
 .fixed-left .nav-link.active, .fixed-left .nav-link:hover, .fixed-left .nav-link:focus, .fixed-left .nav-link:active {
-    opacity: 1;
+    border-bottom: 1px solid #fff;
 }
 
 .fixed-left .nav-link::before {
@@ -317,7 +317,7 @@ p.big {
         color: #fff;
         padding: 1rem 1rem 1rem 26px;
         position: relative;
-        opacity: .5;
+        opacity: 1;
         text-transform: uppercase;
         font-size: 16px;
     }
